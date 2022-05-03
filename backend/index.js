@@ -5,6 +5,6 @@ const cors = require("cors");
 //middleware
 app.use(cors());
 app.use(express.json());
-app.listen(3000, () => {
-  console.log("Server has started on port 3000 🙂" );
+app.listen(3001, () => {
+  console.log("Server has started on port 3001 🙂" );
 });
