@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
+const pgp = require("pg-promise")();
+const db = pgp(connectionString);
 const cors = require("cors");
+const { ENVIROMENT, PORT } = process.env;
 
 //middleware
 app.use(cors());
 app.use(express.json());
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log("Server has started on port 3001 🙂" );
 });
