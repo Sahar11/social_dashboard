@@ -5,5 +5,6 @@ CREATE TABLE messages (
   id SERIAL PRIMARY KEY,
   message VARCHAR(400) NOT NULL,
   user_id integer REFERENCES users(id) ON DELETE CASCADE NOT NULL,
-  date DATE
+  message_date DATE,
+  message_time TIME
 );

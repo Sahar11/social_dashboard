@@ -8,5 +8,7 @@ CREATE TABLE users (
   gender VARCHAR(15) NOT NULL,  
   dob VARCHAR(20) NOT NULL,
   email VARCHAR(255) NOT NULL,
-  pwd VARCHAR(255)
+  pwd VARCHAR(255),
+  users_date DATE,
+  user_time TIME
 );
