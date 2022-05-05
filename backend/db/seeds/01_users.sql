@@ -1,0 +1,1 @@
+INSERT INTO users (id,firstname,lastname, gender, dob, email, pwd) VALUES (1,'Alena', 'Monty', 'female', '12/2/1986','Alena-monty@gmail.com' ,1234);
