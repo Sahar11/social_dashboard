@@ -7,6 +7,7 @@ const connectionString = process.env.CONNECTION_STRING
 const pgp = require("pg-promise")();
 const db = pgp(connectionString);
 const cors = require("cors");
+const morgan = require('morgan');
 const { ENVIROMENT, PORT } = process.env;
 const bodyParser = require('body-parser');
 //routes
@@ -15,21 +16,15 @@ const userRoute = require("./routes/users");
 //app.use(bodyParser.json());
 //middleware
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
+// middleware setup
+//app.use(morgan(ENVIROMENT));
 
 //route
 app.use("/users", userRoute(db));
 
+app.get('/', (req, res) => res.send("Hello World 🙂 🙂"));
 
-app.get('/', async (req, res) => {
-  try {
-
-    const results = await db.query('SELECT * FROM users');
-    res.json(results);
-  } catch (err) {
-    console.log(err);
-  }
-});
-app.listen(PORT, () => {
-  console.log(`Server has started on port {PORT} 🙂` );
+app.listen(8080, () => {
+  console.log(`Server is listening on port  🙂` );
 });
