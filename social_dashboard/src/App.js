@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import Home from './components/Home'
+import Header from './components/Header'
 
 
 function App() {
  
   
    return ( 
-   <Home/>
+   <Header/>
   );
 }
 
