@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 //route
 app.use("/users", userRoute(db));
 
-app.get('/', (req, res) => res.send("Hello World 🙂 🙂"));
+app.get('/', (req, res) => res.send("Hello World 🙂 🙂 "));
 
 app.listen(8080, () => {
   console.log(`Server is listening on port  🙂` );
