@@ -1,15 +1,12 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import './App.css';
-import Header from './components/Header'
-
+import React from 'react';
 
 function App() {
- 
-  
-   return ( 
-   <Header/>
-  );
+
+
+   return (
+     <div>App</div>
+   )
+
 }
 
 export default App;
