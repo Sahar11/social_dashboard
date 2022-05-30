@@ -16,7 +16,7 @@ const Navbar = ({ links }) => {
   const [value, setValue] = useState(0);
   return (
     <>
-      <AppBar sx={{ backgroundImage: "linear-gradient(90deg, rgba(69,138,252,1) 0%, rgba(29,208,253,1) 50%, rgba(69,138,252,0.01826886432926833) 100%);" }}>
+      <AppBar sx={{ backgroundImage: "linear-gradient(90deg, rgba(252,69,236,1) 0%, rgba(253,29,29,1) 50%, rgba(252,69,236,0.01826886432926833) 100%);" }}>
         <Toolbar>
 
           {isMatch ? <><Typography>

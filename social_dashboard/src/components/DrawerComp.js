@@ -7,7 +7,7 @@ const DrawerComp = ({links}) => {
   return (
     <>
     <Drawer PaperProps={{
-      sx:{backgroundColor: 'rgba(29,208,253,1)'}
+      sx:{backgroundColor: 'rgba(29,199,253,1)'}
     }} open={open} onClose={()=> setOpen(false)}>
       <List>
        {links.map((link, index) => (
