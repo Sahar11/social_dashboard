@@ -1,5 +1,9 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
+.navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLi {
+  display: inline;
 }
