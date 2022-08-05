@@ -1,0 +1,95 @@
+.main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  position: relative;
+}
+
+/* .loader::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background:#03e9f4 ;
+  animation: blinkCursor 8s steps(3) infinite;
+} */
+
+
+@keyframes blinkCursor
+{
+  0%,75%
+  {
+    opacity:1;
+  }
+  76%,100%
+  {
+    opacity:0;
+  }
+}
+
+/* .loader h2{
+  position: relative;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  animation: animateBlue 8s steps(7) infinite;
+  overflow: hidden;
+} */
+
+
+.main-blue {
+  color: slateblue;
+  -webkit-box-reflect: below -28px linear-gradient(transparent, #0002);
+  position: relative;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  /* animation: typing 8s steps(7) infinite; */
+  overflow: hidden;
+}
+
+@keyframes typing{
+  0%,90%, 100%
+  {
+    width:0;
+  }
+  30%, 60%
+  {
+    width:401.88px;
+  }
+}
+
+.main-green {
+  color: forestgreen;
+  position: relative;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  /* animation: typing 10s steps(22) infinite; */
+}
+@keyframes typing{
+  0%,90%, 100%
+  {
+    width:0;
+  }
+  30%, 60%
+  {
+    width:401px;
+  }
+}
+
+.main-orange {
+  color: rgb(231, 142, 47);
+  position: relative;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  /* animation: animateOrange 8s steps(30) infinite ; */
+}
+

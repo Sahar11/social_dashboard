@@ -1,0 +1,52 @@
+.tasks-container {
+  margin-top: 10%;
+}
+
+.tasks-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tasks-books {
+  cursor:pointer;
+ border: 1px solid rgb(95, 178, 100);
+ padding:8%;
+ border-radius: 10px;
+ box-shadow: 10px 10px 20px rgb(154, 156, 156);
+ background-image: url(../../data/books.png);
+}
+
+.tasks-friends {
+  cursor: pointer;
+  border: 1px solid rgb(95, 178, 100);
+  padding:8%;
+  border-radius: 10px;
+ box-shadow: 10px 10px 20px rgb(154, 156, 156);
+ background-image: url(../../data/circle.png);
+
+}
+
+.tasks-clubs {
+  cursor: pointer;
+  border: 1px solid rgb(95, 178, 100);
+  padding:8%;
+  border-radius: 10px;
+ box-shadow: 10px 10px 20px rgb(154, 156, 156);
+ background-image: url(../../data/product8.jpg);
+}
+
+.tasks-books:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.tasks-friends:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.tasks-clubs:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.circle {
+  border: 1px solid black;
+}
