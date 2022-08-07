@@ -1,23 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './tasks.css';
-import Book from '../../data/books.png';
 import {
   BrowserRouter as Router , 
   Switch,
   Route,
   Link,
-  Routes
+  Routes,
+  NavLink
 } from "react-router-dom";
+import Books from '../../pages/Books/Books';
+import Friends from '../../pages/friends/MakeFriends';
+import Clubs from '../../pages/clubs/BookClubs';
 
 export default function Tasks() {
- return (
-  <section className="tasks-container">
-    <div className="tasks-list">
-   <Router path="/books"><Link><div className="tasks-books"><Book /></div> </Link></Router>
-      <div className="tasks-friends">Make Friends</div>
-      <div className="tasks-clubs">Book Clubs</div>
-    </div>
-  </section>
+
+  const [showBooks, setShowBooks] = useState(false);
+  const [showFriends, setShowFriends] = useState(false);
+  const [showClubs, setShowClubs] = useState(false);
   
+  function bookClick(showBooks) {
+    setShowBooks(true); 
+    if(showBooks) {
+      
+    return <Books /> 
+   } else {
+      return null;
+    }
+  }
+
+ return (
+  
+  <section className="tasks-container">
+    
+    <div className="tasks-list">
+    
+    <div className="tasks-books" onClick={bookClick}><NavLink to="/books">Books</NavLink></div>
+    <div className="tasks-friends"><NavLink to="/friends">Make Friends</NavLink></div>
+      <div className="tasks-clubs"><NavLink to="/bookclubs">Book Clubs</NavLink></div>
+      
+    </div>
+
+  </section>
+//   <Router>
+//  <section className="tasks-container">
+    
+//  <div className="tasks-list">
+
+// <Routes>
+//   <Route>
+//     <Route index element={<div className="tasks-books"><Books/></div>} />
+//     <Route index element={<div className="tasks-friends"><Friends/></div>} />
+//     <Route path="contact" element={<div className="tasks-clubs"><Clubs/></div>} />
+    
+//   </Route>
+// </Routes>
+//   </div>
+//   </section>
+//   </Router>
  )
 }
