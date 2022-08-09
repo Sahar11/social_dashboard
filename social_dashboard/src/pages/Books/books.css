@@ -1,0 +1,78 @@
+.books-container {
+  border: 1px solid rgb(104, 159, 218);
+    margin: 20px;
+    border-radius: 20px;
+}
+.book-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:stretch;
+  /* margin: 2%; */
+  padding: 2%;
+}
+
+.card-container {
+  width: 128px;
+  border: 1px solid rgb(227, 225, 225);
+  border-radius: 5px;
+  margin: 2.5%;
+}
+
+.book-title {
+ font-size: 12px;
+ margin-left: 1px;
+}
+
+.book-author {
+ font-size: 10px;
+ margin-left:1px;
+}
+
+.book-publishDate {
+font-size: 8px;
+margin-left: 1px;
+}
+
+.searchBar {
+  margin: 3% 35% 2%;
+}
+
+.search-input{
+  margin-right: 8px;
+  border-style: hidden;
+  border-bottom: 1px solid gray;
+  padding:4px;
+}
+.search-btn{
+  background-color: rgb(103, 160, 234);
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sort {
+  background-color: rgb(103, 160, 234);
+  color: aliceblue;
+ border-color: beige;
+margin-left: 10px;
+margin-top: 2px;
+padding: 3px;
+border-radius: 3px;
+}
+
+.booklist-heading {
+  margin: 3% 45% 2%;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:700;
+  color: rgb(78, 130, 199);
+}
+
+.book-icon {
+  margin-top:5px;
+}

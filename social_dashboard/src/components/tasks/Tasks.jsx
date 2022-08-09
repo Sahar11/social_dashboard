@@ -18,15 +18,6 @@ export default function Tasks() {
   const [showFriends, setShowFriends] = useState(false);
   const [showClubs, setShowClubs] = useState(false);
   
-  function bookClick(showBooks) {
-    setShowBooks(true); 
-    if(showBooks) {
-      
-    return <Books /> 
-   } else {
-      return null;
-    }
-  }
 
  return (
   
@@ -34,9 +25,9 @@ export default function Tasks() {
     
     <div className="tasks-list">
     
-    <div className="tasks-books" onClick={bookClick}><NavLink to="/books">Books</NavLink></div>
-    <div className="tasks-friends"><NavLink to="/friends">Make Friends</NavLink></div>
-      <div className="tasks-clubs"><NavLink to="/bookclubs">Book Clubs</NavLink></div>
+    <div className="tasks-books" ><NavLink to="/books">Books</NavLink></div>
+    <div className="tasks-friends"><NavLink to="/friends">Journal</NavLink></div>
+      {/* <div className="tasks-clubs"><NavLink to="/bookclubs">Book Clubs</NavLink></div> */}
       
     </div>
 
